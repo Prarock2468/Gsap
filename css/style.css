@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* { margin: 0; padding: 0;box-sizing: border-box;}
+body {font-family: "Plus Jakarta Sans", sans-serif;}
+section.hero-banner {height: 100vh;background: #000;position: relative;cursor: pointer;}
+.hero-banner-bg-image {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(6deg);
+  overflow: hidden;
+}
+.cursor-example {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: white;
+  z-index: 12;
+}
+.hero-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {max-width: 1040px;transform: scale(0);width: 92%;}
+h1.title {font-size: 60px;}
+p.title-text {font-size: 15px;color: #ffffffd6;max-width: 536px;margin: auto;line-height: 21px;}
+.hr {width: 81px;height: 5px;background: #f2bd52;margin: 19px auto;}
+.hero-banner-bg-image img {position: absolute;}
+img#image6 {width: 194px;left: 25%;top: 10%;}
+img#image7 {height: 191px;left: 20%;bottom: 26%;z-index: 2;}
+img#image8 {width: 251px;right: 25%;top: 16%;}
+img#image1 {top: 9%;left: 0%;width: 250px;}
+img#image2 {right: 0%;top: 3%;width: 221px;}
+img#image5 { right: 0; bottom: 12%; width: 263px;}
+img#image4 {left: 44%;bottom: 5%;width: 190px;}
+img#image3 {bottom: 11%;left: 10%;width: 200px;}
+
+@media screen and (max-width:1270px) {
+ .title {font-size: 46px;}
+  img#image1 {width: 210px;}
+  img#image2 {width: 180px;}
+  img#image5 {bottom: 13%;width: 218px;}
+  img#image8 {width: 250px;right: 16%;}
+  img#image3 {left: 7%;width: 186px;}
+  img#image7 {left: 14%;z-index: -2;}
+}
+
+@media screen and (max-width:992px) {
+  .hero-banner-bg-image {position: absolute;width: 150px;height: 150px;}
+ .title {font-size: 46px;}
+  img#image1 {width: 150px;}
+  img#image2 { width: 149px;top: 6%;}
+  img#image5 {bottom: 13%;width: 168px;}
+  img#image6 {width: 165px;left: 29%;top: 13%;}
+  img#image8 {width: 248px;right: 16%;}
+  img#image4 {left: 44%;bottom: 4%;width: 140px;}
+  img#image3 {left: 7%;width: 126px;bottom: 8%;}
+  img#image7 {left: 10%;bottom: 10%;width: 150px;}
+}
+
+@media screen and (max-width:576px) {
+  .hero-banner-bg-image {position: absolute;width: 150px;height: 150px;}
+  .title {font-size: 35px;}
+  img#image1 {width: 120px;}
+  img#image2 {width: 111px;top: 12%;}
+  img#image5 {bottom: 11%;width: 128px;}
+  img#image6 {width: 123px;left: 26%;top: 14%;}
+  img#image8 {width: 117px;right: 19%;top: 22%;}
+  img#image4 {left: 39%;bottom: 3%;width: 100px;}
+  img#image3 {left: 5%;width: 108px;bottom: 10%;}
+  img#image7 {left: 15%;bottom: 14%;width: 98px;}
+  .hero-banner-bg-image {width: 100px;height: 100px;}
+}
+
+@media screen and (max-width:450px) {
+ .title {font-size: 25px !important;}
+  .hr {width: 45px;height: 2px;margin: 11px auto;}
+}
